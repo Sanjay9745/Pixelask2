@@ -2,6 +2,7 @@ $navText-color: #fff;
 $text-color: #fff;
 $card-color:#fff;
 $hover-color:#826f6fad;
+$background-color:linear-gradient(#1B2337, #121327);
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -78,7 +79,7 @@ header {
     p {
         width: 65%;
         text-align: center;
-        line-height: 3;
+        line-height: 2.5;
         font-size: 1.5rem;
         text-shadow: 1px 3px 6px black;
     }
@@ -215,5 +216,4 @@ color: $text-color;
             border: 3px solid;
         }
 }
-
 

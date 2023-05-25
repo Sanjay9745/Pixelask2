@@ -1,10 +1,12 @@
 
-
+import { HashLink} from 'react-router-hash-link';
 import "../styles/style.css";
 import { Link } from "react-router-dom";
-
+import { animateScroll as scroll } from 'react-scroll';
 function Navbar() {
-
+  const scrollToTop = () => {
+    scroll.scrollToTop();
+  };
 return (
     <div>
       <div
@@ -14,16 +16,16 @@ return (
         <nav >
           <ul className="nav-bar">
             <li>
-              <Link to="/">Home</Link>
+              <Link to="/" smooth onClick={scrollToTop}>Home</Link>
             </li>
             <li>
-              <Link to="/about">About</Link>
+              <Link to="/about" smooth onClick={scrollToTop}>About</Link>
             </li>
             <li>
-              <Link to="/work">Work</Link>
+              <Link to="/work" smooth onClick={scrollToTop}>Work</Link>
             </li>
             <li>
-              <a href={"#contact"}>Contact</a>
+              <HashLink to="#contact" smooth onClick={scrollToTop}>Contact</HashLink>
             </li>
           </ul>
         </nav>

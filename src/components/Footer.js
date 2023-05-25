@@ -1,8 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import {FaLinkedin,FaInstagram,FaYoutube,FaTwitter} from "react-icons/fa";
-
+import { animateScroll as scroll } from 'react-scroll';
 function Footer() {
+  const scrollToTop = () => {
+    scroll.scrollToTop();
+  };
   return (
     <>
       <div className="footer" id="contact">
@@ -29,19 +32,19 @@ function Footer() {
             <h3>Features Info</h3>
             <ul>
               <li>
-                <Link to="/">Home</Link>
+                <Link to="/" smooth onClick={scrollToTop}>Home</Link>
               </li>
               <li>
-                <Link to="/about">About</Link>
+                <Link to="/about" smooth onClick={scrollToTop}>About</Link>
               </li>
               <li>
-                <Link to="/work">Work</Link>
+                <Link to="/work" smooth onClick={scrollToTop}>Work</Link>
               </li>
               <li>
-                <Link to="/terms-and-conditions">Terms And Conditions</Link>
+                <Link to="/terms-and-conditions" smooth onClick={scrollToTop}>Terms And Conditions</Link>
               </li>
               <li>
-                <Link to="/privacy">Privacy And Policy</Link>
+                <Link to="/privacy" smooth onClick={scrollToTop}>Privacy And Policy</Link>
               </li>
             </ul>
           </div>
