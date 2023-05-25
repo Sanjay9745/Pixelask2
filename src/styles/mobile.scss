@@ -1,0 +1,119 @@
+@import './style.scss';
+@media (max-width:700px) {
+    .navbar{
+      
+        img{
+            margin-top: 10px;
+            max-height: 50px;
+            max-width: 100px;
+        }
+        
+        .bi-list{
+            display: block;
+          
+        }
+        input:checked ~ nav{
+            display: block;
+            
+        }
+       
+    }
+    nav{
+        @include route-list(column,30px ,1.5rem);
+        position: absolute;
+        display: none;
+        margin-left: 0;
+        background-color: rgb(0, 14, 52);
+        padding: 70px;
+        height: 300px;
+        right: 0;
+        top: -10px;
+        z-index: -1;
+
+    }
+  
+    .hero{
+        img{
+            width: 80%;
+            margin-top: 200px;
+        }
+        p{
+            width: 90%;
+            font-size:1.5rem ;
+            margin-top: 60px;
+            line-height: 2;
+        }
+    }
+    .projects {
+        padding-bottom: 80px;
+        h2{
+            margin-top: 30px;
+            font-size: 1.8rem;
+        }
+         h1{
+      
+           margin-left: 5%;
+            margin-top: 80px;
+            font-size: 2rem;
+        }
+       
+        .cards{
+            gap: 30px;
+        }
+    }
+
+    .card {
+        width: 200px;
+        height: 300px;
+        .card-head {
+           
+            width: 200px;
+            height: 200px;
+        
+          
+            img {
+                width: 125px;
+            
+            }
+          h3{
+            font-size: 1.1rem;
+         
+          }
+            
+        }
+    }
+    .footer{
+       .content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 30px;
+       }
+       
+    
+    }
+    .game-details{
+
+            margin:0 0 0 50px ;
+           h3,p{
+            align-self: center;
+           }
+        }
+        .about,.terms{
+       
+                margin:5%;
+                gap: 10px;
+                p{
+                    line-height: 3;
+                    align-self: flex-start;
+                }
+                h1{
+                    margin-top: 100px;
+                }
+                h3{
+                    font-size: 1.6rem;
+                    align-self: flex-start;
+                }
+        }
+        
+  }

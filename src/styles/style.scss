@@ -1,0 +1,219 @@
+$navText-color: #fff;
+$text-color: #fff;
+$card-color:#fff;
+$hover-color:#826f6fad;
+.navbar {
+    display: flex;
+    justify-content: space-between;
+   
+    backdrop-filter: blur(2px);
+    position: fixed;
+    top: 0;
+
+    height:80px;
+    width: 100%;
+z-index: 10;
+    input{
+        display: none;
+    }
+    img {
+        left: 80px;
+        max-width: 200px;
+    }
+    svg{
+        margin: 10px 40px 0 0;
+        transition:.5s linear;
+        display: none;
+    }
+
+}
+@mixin flex-center($direction:column){
+    display: flex;
+    flex-direction: $direction;
+    justify-content: center;
+    align-items: center;
+}
+@mixin route-list($direction:row,$gap:60px,$font-size:1.5rem){
+    ul {
+        display: flex;
+        gap: $gap;
+        flex-direction: $direction;
+        li {
+            list-style: none;
+            a {
+                text-decoration: none;
+                font-size:$font-size;
+                font-weight: light;
+                color: $navText-color;
+                transition: .2s linear;
+                &:hover{
+                    color:$hover-color;
+                }
+            }
+        }
+    }
+}
+nav {
+    margin-top: 10px;
+    margin-left: 380px;
+   @include route-list();
+   
+}
+header {
+    width: 100%;
+    height: 100vh;
+    
+}
+
+.hero {
+
+         @include flex-center;
+    color: $text-color;
+
+    img {
+        width: 45%;
+        filter: drop-shadow(2px 2px 2px rgb(16, 15, 15));
+        margin-top: 100px;
+    }
+    p {
+        width: 65%;
+        text-align: center;
+        line-height: 3;
+        font-size: 1.5rem;
+        text-shadow: 1px 3px 6px black;
+    }
+}
+h2{
+    font-size: 2.3rem;
+    margin-left: 40px;
+}
+.projects {
+    height: auto;
+    width: 100%;
+    color: $text-color;
+    background-image: linear-gradient(#1B2337, #121327);	/*base font-family*/
+    h1{
+        margin-left: 43%;
+        margin-top: 80px;
+    }
+   
+    .cards{
+        display: flex;
+      
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+}
+.card {
+    width: 300px;
+    height: 400px;
+    background-color:$card-color;
+    border-radius: 35px;
+    text-align: center;
+    box-shadow:1px 2px 6px rgba(0, 0, 0, 0.837);
+  
+    .card-head {
+        background-image: linear-gradient(to bottom right,#304352, #292e49);
+        width: 300px;
+        height: 300px;
+        border-radius: 35px 35px 0 0;
+     @include flex-center;
+     color: $text-color;
+        img {
+            width: 200px;
+            border-radius: 35px;
+            margin-top: 20px;
+        }
+      h3{
+        font-size: 1.5rem;
+      }
+        
+    }
+    button,a{
+        padding: 15px 50px;
+        margin-top: 30px;
+        border: none;
+        border-radius: 25px;
+        background-image: linear-gradient(to bottom right,#304352, #292e49);
+        font-family: "Poppins";
+        color: $text-color;
+        font-size: 1.2rem;
+        font-weight: 500;
+        transition: transform .2s ease-in-out;
+        &:hover{
+            transform: scale(1.1);
+            box-shadow:1px 2px 6px rgba(16, 15, 15, 0.26)
+        }
+    }
+    a{
+        text-decoration: none;
+        line-height: 5;
+    }
+}
+.footer{
+    color: $text-color;
+  
+   .content{
+    display: flex;
+    justify-content: space-around;
+    .email{
+        p{
+            margin-left: 44px;
+            font-size: 1.3rem;
+        }
+        @include route-list(row,30px,1.5rem);
+      
+    }
+    .features{
+      
+        @include route-list(column,30px,1.2rem);
+     
+        h3{
+            margin-left: 40px;
+        }
+        
+    }
+   }
+   
+
+}
+
+.game-details{
+color: $text-color;
+    @include flex-center(column);
+    margin:0 30%;
+    gap: 30px;
+    h1{
+        margin-top: 100px;
+    }
+    img{
+        width: 200px;
+    }
+    h3{
+        font-size:2rem;
+       
+    }
+
+    p{
+        line-height: 3;
+    }
+}
+.about,.terms{
+    color: $text-color;
+        @include flex-center(column);
+        margin:5% 25%;
+        gap: 10px;
+        p{
+            line-height: 3;
+            align-self: flex-start;
+        }
+        h3{
+            font-size: 1.6rem;
+            align-self: flex-start;
+        }
+        hr{
+            border: 3px solid;
+        }
+}
+
+

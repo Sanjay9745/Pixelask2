@@ -1,0 +1,234 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
+  position: fixed;
+  top: 0;
+  height: 80px;
+  width: 100%;
+  z-index: 10;
+}
+.navbar input {
+  display: none;
+}
+.navbar img {
+  left: 80px;
+  max-width: 200px;
+}
+.navbar svg {
+  margin: 10px 40px 0 0;
+  transition: 0.5s linear;
+  display: none;
+}
+
+nav {
+  margin-top: 10px;
+  margin-left: 380px;
+}
+nav ul {
+  display: flex;
+  gap: 60px;
+  flex-direction: row;
+}
+nav ul li {
+  list-style: none;
+}
+nav ul li a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: light;
+  color: #fff;
+  transition: 0.2s linear;
+}
+nav ul li a:hover {
+  color: rgba(130, 111, 111, 0.6784313725);
+}
+
+header {
+  width: 100%;
+  height: 100vh;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+.hero img {
+  width: 45%;
+  filter: drop-shadow(2px 2px 2px rgb(16, 15, 15));
+  margin-top: 100px;
+}
+.hero p {
+  width: 65%;
+  text-align: center;
+  line-height: 3;
+  font-size: 1.5rem;
+  text-shadow: 1px 3px 6px black;
+}
+
+h2 {
+  font-size: 2.3rem;
+  margin-left: 40px;
+}
+
+.projects {
+  height: auto;
+  width: 100%;
+  color: #fff;
+  background-image: linear-gradient(#1B2337, #121327); /*base font-family*/
+}
+.projects h1 {
+  margin-left: 43%;
+  margin-top: 80px;
+}
+.projects .cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.card {
+  width: 300px;
+  height: 400px;
+  background-color: #fff;
+  border-radius: 35px;
+  text-align: center;
+  box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.837);
+}
+.card .card-head {
+  background-image: linear-gradient(to bottom right, #304352, #292e49);
+  width: 300px;
+  height: 300px;
+  border-radius: 35px 35px 0 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+.card .card-head img {
+  width: 200px;
+  border-radius: 35px;
+  margin-top: 20px;
+}
+.card .card-head h3 {
+  font-size: 1.5rem;
+}
+.card button, .card a {
+  padding: 15px 50px;
+  margin-top: 30px;
+  border: none;
+  border-radius: 25px;
+  background-image: linear-gradient(to bottom right, #304352, #292e49);
+  font-family: "Poppins";
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 500;
+  transition: transform 0.2s ease-in-out;
+}
+.card button:hover, .card a:hover {
+  transform: scale(1.1);
+  box-shadow: 1px 2px 6px rgba(16, 15, 15, 0.26);
+}
+.card a {
+  text-decoration: none;
+  line-height: 5;
+}
+
+.footer {
+  color: #fff;
+}
+.footer .content {
+  display: flex;
+  justify-content: space-around;
+}
+.footer .content .email p {
+  margin-left: 44px;
+  font-size: 1.3rem;
+}
+.footer .content .email ul {
+  display: flex;
+  gap: 30px;
+  flex-direction: row;
+}
+.footer .content .email ul li {
+  list-style: none;
+}
+.footer .content .email ul li a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: light;
+  color: #fff;
+  transition: 0.2s linear;
+}
+.footer .content .email ul li a:hover {
+  color: rgba(130, 111, 111, 0.6784313725);
+}
+.footer .content .features ul {
+  display: flex;
+  gap: 30px;
+  flex-direction: column;
+}
+.footer .content .features ul li {
+  list-style: none;
+}
+.footer .content .features ul li a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: light;
+  color: #fff;
+  transition: 0.2s linear;
+}
+.footer .content .features ul li a:hover {
+  color: rgba(130, 111, 111, 0.6784313725);
+}
+.footer .content .features h3 {
+  margin-left: 40px;
+}
+
+.game-details {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 30%;
+  gap: 30px;
+}
+.game-details h1 {
+  margin-top: 100px;
+}
+.game-details img {
+  width: 200px;
+}
+.game-details h3 {
+  font-size: 2rem;
+}
+.game-details p {
+  line-height: 3;
+}
+
+.about, .terms {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 5% 25%;
+  gap: 10px;
+}
+.about p, .terms p {
+  line-height: 3;
+  align-self: flex-start;
+}
+.about h3, .terms h3 {
+  font-size: 1.6rem;
+  align-self: flex-start;
+}
+.about hr, .terms hr {
+  border: 3px solid;
+}/*# sourceMappingURL=style.css.map */
